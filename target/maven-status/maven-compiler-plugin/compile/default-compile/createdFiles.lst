@@ -1,4 +1,7 @@
+com/mindTic/MindTic/dao/usuarioimp.class
+com/mindTic/MindTic/Entidades/MovimientoDinero.class
 com/mindTic/MindTic/MindTicApplication.class
-Entidades/Empresa.class
-Entidades/Empleado.class
-Entidades/Transaccion.class
+com/mindTic/MindTic/Entidades/Empleado.class
+com/mindTic/MindTic/Controladores/ControlUsuarios.class
+com/mindTic/MindTic/dao/UsuarioDao.class
+com/mindTic/MindTic/Entidades/Empresa.class

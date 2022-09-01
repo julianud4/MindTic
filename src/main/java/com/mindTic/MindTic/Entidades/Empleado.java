@@ -1,0 +1,38 @@
+package com.mindTic.MindTic.Entidades;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
+
+@Entity @Table(name = "empleados")
+public class Empleado {
+
+    @Setter @Getter @Id @GeneratedValue (strategy = GenerationType.AUTO) @Column(name="idempleado")
+    private Long idempleado;
+
+    @Setter @Getter @Column(name="nombrecompleto")
+    private String nombrecompleto;
+
+    @Setter @Getter @Column(name="email")
+    private String email;
+
+    @Setter @Getter @Column(name="rol")
+    private String rol;
+
+    @Getter    @Setter @Column(name="fecha_creacion")
+    private Date fecha_creacion;
+
+    @Getter    @Setter @Column(name="fecha_act")
+    private Date fecha_act;
+
+    @ManyToOne()
+    @JoinColumn(name = "idempresa") @Setter @Getter
+    private Empresa empresa;
+
+    @OneToMany(mappedBy = "empleado", cascade = CascadeType.ALL, orphanRemoval = true) @Setter @Getter
+    private List<MovimientoDinero> moviminetosList;
+
+}
