@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit name="6">
+        <packages>
+          <package value="com.mindTic.MindTic" />
+        </packages>
+      </persistence-unit>
+      <persistence-unit name="66">
+        <packages>
+          <package value="com.mindTic.MindTic" />
+        </packages>
+      </persistence-unit>
+    </persistence-units>
+  </component>
+</project>
