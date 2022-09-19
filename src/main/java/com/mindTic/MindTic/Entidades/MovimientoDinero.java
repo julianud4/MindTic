@@ -19,7 +19,7 @@ public class MovimientoDinero {
     private boolean tipomovimiento;
 
     @Setter @Getter @Column(name="conceptomovimiento")
-    private String conceptomovimineto;
+    private String conceptomovimiento;
 
     @Getter    @Setter @Column(name="fecha_creacion")
     private Date fecha_creacion;

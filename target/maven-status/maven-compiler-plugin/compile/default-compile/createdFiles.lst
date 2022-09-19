@@ -3,6 +3,8 @@ com/mindTic/MindTic/dao/usuarioimp.class
 com/mindTic/MindTic/Entidades/MovimientoDinero.class
 com/mindTic/MindTic/MindTicApplication.class
 com/mindTic/MindTic/Entidades/Empleado.class
-com/mindTic/MindTic/Controladores/ControlUsuarios.class
+com/mindTic/MindTic/Entidades/Rol.class
 com/mindTic/MindTic/dao/UsuarioDao.class
+com/mindTic/MindTic/Controladores/AutControl.class
 com/mindTic/MindTic/Entidades/Empresa.class
+com/mindTic/MindTic/Controladores/ControlEmpresas.class

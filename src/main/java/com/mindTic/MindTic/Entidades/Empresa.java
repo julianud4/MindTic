@@ -35,4 +35,19 @@ public class Empresa {
 
     @OneToMany(mappedBy = "empresa", cascade = CascadeType.ALL, orphanRemoval = true) @Setter @Getter
     private List<Empleado> EmpleadosList;
+
+    public Empresa() {
+    }
+
+    public Empresa(long idempresa, String nombre, String direccion, String telefono, String nit, Date fecha_creacion, Date fecha_act, List<Empleado> empleadosList) {
+        this.idempresa = idempresa;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.nit = nit;
+        this.fecha_creacion = fecha_creacion;
+        this.fecha_act = fecha_act;
+        EmpleadosList = empleadosList;
+    }
+
 }

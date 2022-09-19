@@ -19,8 +19,12 @@ public class Empleado {
     @Setter @Getter @Column(name="email")
     private String email;
 
-    @Setter @Getter @Column(name="rol")
-    private String rol;
+    @Setter @Getter @Column(name="password")
+    private String password;
+
+    @ManyToOne()
+    @JoinColumn(name = "idrol") @Setter @Getter
+    private Rol rol;
 
     @Getter    @Setter @Column(name="fecha_creacion")
     private Date fecha_creacion;
