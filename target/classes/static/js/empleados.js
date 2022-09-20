@@ -27,7 +27,7 @@ async function cargarUsuarios(){
 }
 
 async function eliminarEmpresa(id){
-if(!confirm('¿Desea Eliminar esta Empresa?')){
+if(!confirm('¿Desea Eliminar este Empleado del Sistema?')){
 return
 }
 
