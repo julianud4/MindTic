@@ -10,7 +10,7 @@ import java.util.Date;
 public class MovimientoDinero {
 
     @Setter @Getter @Id @GeneratedValue(strategy = GenerationType.AUTO) @Column(name="idmovimiento")
-    private String idmovimiento;
+    private Long idmovimiento;
 
     @Setter @Getter @Column(name="monto")
     private float monto;

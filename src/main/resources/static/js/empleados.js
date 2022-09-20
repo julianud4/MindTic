@@ -17,7 +17,7 @@ async function cargarUsuarios(){
 
     let listadoHtml ='';
     for(let usuario of usuarios){
-    let btneliminar='<a href="#" onclick="eliminarEmpresa('+usuario[0]+')" class="btn btn-danger btn-circle btn-sm"><i class="fas fa-trash"></i></a>';
+    let btneliminar='<a href="#" onclick="eliminar('+usuario[0]+')" class="btn btn-danger btn-circle btn-sm"><i class="fas fa-trash"></i></a>';
     let usuarioHtml='<tr><td>'+usuario[0]+'</td><td>'+usuario[1]+'</td><td>'+usuario[2]+'</td><td>'+usuario[3]+'</td><td>'+usuario[4]+'</td><td>'+ btneliminar +'</td></tr>';
     listadoHtml += usuarioHtml;
     }
@@ -26,7 +26,7 @@ async function cargarUsuarios(){
 
 }
 
-async function eliminarEmpresa(id){
+async function eliminar(id){
 if(!confirm('¿Desea Eliminar este Empleado del Sistema?')){
 return
 }
