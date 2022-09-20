@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Empleados - Tables</title>
+    <title>Movimientos $ - Tables</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -88,14 +88,14 @@
             </li>
 
             <!-- Nav Item - Empleados -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="empleados.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Empleados</span></a>
             </li>
 
             <!-- Nav Item - Empleados -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="movimientos.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Movimientos de Dinero</span></a>
@@ -122,21 +122,27 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
+                    <form class="form-inline">
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </form>
+
+                    <!-- Topbar Search -->
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <h1 class="h3 mb-2 text-gray-800">Empleado</h1>
+                            <h1 class="h3 mb-2 text-gray-800">Movimientos de Dinero</h1>
                             <div class="input-group-append">
 
                             </div>
                         </div>
                     </form>
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item Your Websitedropdown no-arrow d-sm-none">
+                        <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
@@ -151,7 +157,7 @@
                                             aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>Your Website
+                                                <i class="fas fa-search fa-sm"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -202,11 +208,11 @@
 
                     <!-- Page Heading -->
 
-                    <p class="row">Listado de empleados registrados en el software <a href="https://datatables.net"
+                    <p class="row">Listado de movimientos de dinero registrados en el software <a href="https://datatables.net"
                             class="col-sm-12 col-md-3 target=">contactar con el Administrador</a><a
-                            onclick="" href="nuevoempleado.html"
+                            onclick="" href="nuevomovimiento.html"
                             class="btn btn-primary btn-user btn-block col-sm-12 col-md-3" style="margin-left: auto;">
-                            Nuevo Empleado
+                            Nuevo Movimiento $
                         </a></p>
 
                     <div class="container-fluid">
@@ -215,7 +221,7 @@
                         <!-- DataTales Example -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Tabla de Empleados</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">Tabla de Movimientos de Dinero</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -252,26 +258,27 @@
                                                             <th class="sorting" tabindex="0" aria-controls="usuarios"
                                                                 rowspan="1" colspan="1"
                                                                 aria-label="Nombre Completo: activate to sort column ascending"
-                                                                style="width: 223px;">Nombre</th>
+                                                                style="width: 223px;">Monto</th>
                                                             <th class="sorting" tabindex="0" aria-controls="usuarios"
                                                                 rowspan="1" colspan="1"
                                                                 aria-label="Email: activate to sort column ascending"
-                                                                style="width: 229px;">Email</th>
+                                                                style="width: 229px;">Tipo de Movimiento</th>
                                                             <th class="sorting" tabindex="0" aria-controls="usuarios"
                                                                 rowspan="1" colspan="1"
                                                                 aria-label="Telefono: activate to sort column ascending"
-                                                                style="width: 137px;">Rol</th>
+                                                                style="width: 137px;">Concepto</th>
                                                             <th class="sorting" tabindex="0" aria-controls="usuarios"
                                                                 rowspan="1" colspan="1"
                                                                 aria-label="Telefono: activate to sort column ascending"
-                                                                style="width: 137px;">Empresa</th>
+                                                                style="width: 137px;">Empleado</th>
                                                             <th class="sorting" tabindex="0" aria-controls="usuarios"
                                                                 rowspan="1" colspan="1"
                                                                 aria-label="Acciones: activate to sort column ascending"
                                                                 style="width: 119px;">Acciones</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>                                                        
+                                                    <tbody>
+
                                                     </tbody>
                                                 </table>
                                             </div>
