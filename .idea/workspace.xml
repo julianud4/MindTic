@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad9d395b-bdee-4e2d-b492-a340f1fc0638" name="Changes" comment="creacion paginas web">
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mindTic/MindTic/Entidades/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mindTic/MindTic/Entidades/Empleado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mindTic/MindTic/dao/usuarioimp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mindTic/MindTic/dao/usuarioimp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/empleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/empleados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/empresas.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/empresas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/empleados.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/empleados.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/movimientos.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/movimientos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/nuevaempresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/nuevaempresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/nuevoempleado.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/nuevoempleado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/nuevomovimiento.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/nuevomovimiento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/registro copy.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/registro copy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/registro.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E9eMebfiQnMWDpZk2qMojJ2JXN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/julian/MinTic/MindTic2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mindTic.MindTic.Controladores" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad9d395b-bdee-4e2d-b492-a340f1fc0638" name="Changes" comment="" />
+      <created>1662012180181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662012180181</updated>
+    </task>
+    <task id="LOCAL-00001" summary="proyecto inicial">
+      <created>1662012343794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662012343794</updated>
+    </task>
+    <task id="LOCAL-00002" summary="eliminar y listar ok">
+      <created>1663558224405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663558224405</updated>
+    </task>
+    <task id="LOCAL-00003" summary="eliminar y listar ok">
+      <created>1663560262053</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663560262053</updated>
+    </task>
+    <task id="LOCAL-00004" summary="eliminar y listar ok">
+      <created>1663560267860</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663560267860</updated>
+    </task>
+    <task id="LOCAL-00005" summary="creacion paginas web">
+      <created>1663644045912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663644045912</updated>
+    </task>
+    <task id="LOCAL-00006" summary="creacion paginas web">
+      <created>1663644104548</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663644104548</updated>
+    </task>
+    <task id="LOCAL-00007" summary="creacion paginas web">
+      <created>1663741074933</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663741074933</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="proyecto inicial" />
+    <MESSAGE value="eliminar y listar ok" />
+    <MESSAGE value="creacion paginas web" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion paginas web" />
+  </component>
+</project>
