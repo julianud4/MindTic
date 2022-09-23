@@ -16,8 +16,8 @@ public interface UsuarioDao {
     void eliminarEmpleados(Long id);
     void eliminarEmpresas(Long id);
     void eliminarMovimientos(Long id);
-    boolean verificarLogin(Empleado empleado);
+    Empleado verificarLogin(Empleado empleado);
     void nempresa(Empresa empresa);
 
-    void nempleado(Empleado empleado);
+    void nempleado(Empleado empleadoa);
 }

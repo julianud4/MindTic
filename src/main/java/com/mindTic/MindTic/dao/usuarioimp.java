@@ -4,6 +4,8 @@ import com.mindTic.MindTic.Entidades.Empleado;
 import com.mindTic.MindTic.Entidades.Empresa;
 import com.mindTic.MindTic.Entidades.MovimientoDinero;
 import com.mindTic.MindTic.Entidades.Rol;
+import de.mkammerer.argon2.Argon2;
+import de.mkammerer.argon2.Argon2Factory;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -63,14 +65,24 @@ public class usuarioimp implements UsuarioDao{
     }
 
     @Override
-    public boolean verificarLogin(@NotNull Empleado empleado) {
-        String query = "FROM Empleado WHERE email = :email AND password= :password";
+    public Empleado verificarLogin(Empleado empleado) {
+        String query = "FROM Empleado WHERE email = :email";
         List <Empleado> lista = entityManager.createQuery(query)
                 .setParameter("email",empleado.getEmail())
-                .setParameter("password",empleado.getPassword())
                 .getResultList();
-        return !lista.isEmpty();
+
+        if (lista.isEmpty()){
+            return null;
         }
+
+        String contrasena=lista.get(0).getPassword();
+        Argon2 argon2= Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
+        if(argon2.verify(contrasena, empleado.getPassword())){
+            return lista.get(0);
+        }
+        return null;
+        }
+
     @Override
     public void nempresa(Empresa empresa) {
         long miliseconds = System.currentTimeMillis();
@@ -84,7 +96,10 @@ public class usuarioimp implements UsuarioDao{
     public void nempleado(Empleado empleado) {
         long miliseconds = System.currentTimeMillis();
         Date date = new Date(miliseconds);
-        System.out.println("llll");
+        Argon2 argon2= Argon2Factory.create(Argon2Factory.Argon2Types.ARGON2id);
+        empleado.setPassword(argon2.hash(1,1024,1, empleado.getPassword()));
+        empleado.setRol(entityManager.find(Rol.class, empleado.getRolid()));
+        empleado.setEmpresa(entityManager.find(Empresa.class, empleado.getEmpresaid()));
         empleado.setFecha_creacion(date);
         empleado.setFecha_act(date);
         entityManager.merge(empleado);

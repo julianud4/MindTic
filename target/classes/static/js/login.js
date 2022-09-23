@@ -15,10 +15,16 @@ const request = await fetch('api/login', {
       },
       body:JSON.stringify(datos)
     });
-    const respuesta = await request.text();
-    if(respuesta=="OK"){
-    window.location.href = "empleados.html"
+
+    
+    const respuesta = await request.json();
+    console.log(respuesta);
+    if(respuesta[0] !='FAIL'){
+      localStorage.token=respuesta[0];
+      localStorage.nombrecompleto=respuesta[1];
+      window.location.href = "empleados.html"
     }
+
     else {
     alert("Usuario o contraseña invalidas, Intentemoslo nuevamente")
     }

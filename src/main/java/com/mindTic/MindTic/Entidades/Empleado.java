@@ -10,13 +10,11 @@ import java.util.List;
 @Entity @Table(name = "empleados")
 public class Empleado {
 
-    @Setter @Getter @Id @GeneratedValue (strategy = GenerationType.AUTO) @Column(name="idempleado")
+    @Getter    @Setter @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name="idempleado")
     private Long idempleado;
 
     @Setter @Getter @Column(name="nombrecompleto")
     private String nombrecompleto;
-
-
 
     @Setter @Getter @Column(name="email")
     private String email;
@@ -41,18 +39,12 @@ public class Empleado {
     @OneToMany(mappedBy = "empleado", cascade = CascadeType.ALL, orphanRemoval = true) @Setter @Getter
     private List<MovimientoDinero> moviminetosList;
 
-    public Empleado() {
+    @Setter @Getter @Column(name="empresaid")
+    protected long empresaid;
 
-    }
+    @Setter @Getter @Column(name="rolid")
+    private int rolid;
 
-    public Empleado(Long idempleado, String nombrecompleto, String email, String password, Rol rol, Date fecha_creacion, Date fecha_act, Empresa empresa) {
-        this.idempleado = idempleado;
-        this.nombrecompleto = nombrecompleto;
-        this.email = email;
-        this.password = password;
-        this.rol = rol;
-        this.fecha_creacion = fecha_creacion;
-        this.fecha_act = fecha_act;
-        this.empresa = empresa;
-    }
+
+
 }

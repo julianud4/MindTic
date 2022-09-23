@@ -4,10 +4,12 @@ import com.mindTic.MindTic.Entidades.Empleado;
 import com.mindTic.MindTic.Entidades.Empresa;
 import com.mindTic.MindTic.Entidades.MovimientoDinero;
 import com.mindTic.MindTic.Entidades.Rol;
+import com.mindTic.MindTic.Utils.JWTUtil;
 import com.mindTic.MindTic.dao.UsuarioDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
 
@@ -17,10 +19,17 @@ public class ControlEmpresas {
     @Autowired
     private UsuarioDao usuariodao;
 
+    @Autowired
+    private JWTUtil jwtUtil;
+
     @RequestMapping(value = "api/listarempresas",method = RequestMethod.GET)
     public List<Empresa> listarEmpresa(){ return usuariodao.listarEmpresa();    }
     @RequestMapping(value = "api/listarempleados",method = RequestMethod.GET)
-    public List<Empleado> listarEmpleado(){
+    public List<Empleado> listarEmpleado(@RequestHeader(value = "Authorization") String token){
+        String empleadoid=jwtUtil.getKey(token);
+        if(empleadoid==null){
+            return new ArrayList<>();
+        }
         return usuariodao.listarEmpleado();
     }
     @RequestMapping(value = "api/listarmovimientos",method = RequestMethod.GET)
@@ -45,7 +54,5 @@ public class ControlEmpresas {
     public void nuevaEmpresa(@RequestBody Empresa empresa){ usuariodao.nempresa(empresa);    }
     @RequestMapping(value = "api/listarempleados",method = RequestMethod.POST)
     public void nuevoEmpleado(@RequestBody Empleado empleado){
-        System.out.println(empleado);
-        usuariodao.nempleado(empleado);    }
-
+            usuariodao.nempleado(empleado);}
 }
